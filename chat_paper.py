@@ -451,15 +451,15 @@ if __name__ == '__main__':
     # parser.add_argument("--pdf_path", type=str, default=r'demo.pdf', help="if none, the bot will download from arxiv with query")
     # parser.add_argument("--pdf_path", type=str, default=r'C:\Users\Administrator\Desktop\DHER\RHER_Reset\ChatPaper', help="if none, the bot will download from arxiv with query")
     parser.add_argument("--pdf_path", type=str, default='', help="if none, the bot will download from arxiv with query")
-    parser.add_argument("--query", type=str, default='all: ChatGPT robot', help="the query string, ti: xx, au: xx, all: xx,")    
-    parser.add_argument("--key_word", type=str, default='reinforcement learning', help="the key word of user research fields")
-    parser.add_argument("--filter_keys", type=str, default='ChatGPT robot', help="the filter key words, 摘要中每个单词都得有，才会被筛选为目标论文")
+    parser.add_argument("--query", type=str, default='all: Differential Privacy', help="the query string, ti: xx, au: xx, all: xx,")    
+    parser.add_argument("--key_word", type=str, default='Differential Privacy', help="the key word of user research fields")
+    parser.add_argument("--filter_keys", type=str, default='Differential Privacy', help="the filter key words, 摘要中每个单词都得有，才会被筛选为目标论文")
     parser.add_argument("--max_results", type=int, default=1, help="the maximum number of results")
     # arxiv.SortCriterion.Relevance
     parser.add_argument("--sort", type=str, default="Relevance", help="another is LastUpdatedDate")    
     parser.add_argument("--save_image", default=False, help="save image? It takes a minute or two to save a picture! But pretty")
     parser.add_argument("--file_format", type=str, default='md', help="导出的文件格式，如果存图片的话，最好是md，如果不是的话，txt的不会乱")
-    parser.add_argument("--language", type=str, default='zh', help="The other output lauguage is English, is en")
+    parser.add_argument("--language", type=str, default='en', help="The other output lauguage is English, is en")
     
     args = parser.parse_args()
     import time
